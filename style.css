@@ -1,0 +1,86 @@
+ .myresponsivefixtable table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+   color: #00a7fe;
+  
+}
+
+ .myresponsivefixtable caption {
+  font-size: 1.2em;
+  padding: .7em;
+  text-align:center;
+}
+
+ .myresponsivefixtable > table  tr {
+  background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    padding: 1em;
+    box-shadow: 0 5px 5px 0 rgb(30 30 30 / 15%);
+    border-radius: 10px;
+   margin: 5% 0px;
+}
+
+ .myresponsivefixtable table th,
+table td {
+  padding: 1%;
+  text-align: center;
+}
+
+   .myresponsivefixtable table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+     font-weight: bold;
+    background: #00a7fe;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+   .myresponsivefixtable table {
+    border: 0;
+  }
+
+   .myresponsivefixtable table caption {
+    font-size: 1.3em;    padding: 2.5% 0px 0px 0px;
+  }
+  
+  .myresponsivefixtable table  thead {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  .myresponsivefixtable table tr {
+    
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  .myresponsivefixtable table td {
+        border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+    font-weight: 500;
+  }
+  
+   .myresponsivefixtable table td::before {
+
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .myresponsivefixtable table td:last-child {
+    border-bottom: 0;
+  }
+}
